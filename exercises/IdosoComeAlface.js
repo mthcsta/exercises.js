@@ -19,13 +19,13 @@ class Universo {
   }
 }
 
-const Velho = new Universo('👴')
+const Idoso = new Universo('👴')
 const Alface = new Universo('🥬')
 
 // Dado um limite de gerações 
 // Retorne o processo da cadeia alimentar, onde 👴 come 🥬 e 🥬 come 👴
 function passarGeração(Geraçoes) {
-  const atualGeraçao = (Geraçoes % 2) ? Velho : Alface
+  const atualGeraçao = (Geraçoes % 2) ? Idoso : Alface
   if (Geraçoes == 0) {
     return atualGeraçao
   }
